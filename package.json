@@ -1,0 +1,22 @@
+{
+  "name": "ms_bulk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^22.10.3",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "@microsoft/microsoft-graph-client": "^3.0.7",
+    "p-queue": "^8.0.1",
+    "uuid": "^11.0.3",
+    "winston": "^3.17.0"
+  }
+}
