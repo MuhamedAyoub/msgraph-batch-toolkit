@@ -1,5 +1,5 @@
 {
-  "name": "ms_bulk",
+  "name": "msgraph-batch-toolkit",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",

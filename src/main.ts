@@ -37,15 +37,19 @@ class MsGraphBatchProcessor {
 			maxRetries: number; // Max retry attempts (default: 3)
 			retryDelay: number; // Base delay between retries in ms (default: 1000)
 			queueInterval: number; // Interval between queue processing in ms (default: 1000)
-		} = {
+		}
+	) {
+		const defaultOptions = {
 			batchSize: 20,
 			concurrency: 2,
 			maxRetries: 3,
-			retryDelay: options.retryDelay ?? 0 / 1000 ?? 30,
+			// e.g. 1 second if not specified
+			retryDelay: 1,
 			queueInterval: 1000,
-		}
-	) {
+		};
+
 		this.options = {
+			...defaultOptions,
 			...options,
 		};
 	}
